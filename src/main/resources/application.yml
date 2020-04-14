@@ -1,4 +1,4 @@
-#comcat�˿�
+#comcat�˿�
 server:
   port: 8080
 
@@ -10,3 +10,11 @@ spring:
     username: system
     url: jdbc:oracle:thin:@192.168.0.105:1521:orcl
     driver-class-name: oracle.jdbc.driver.OracleDriver
+
+mybatis:
+  #实体类别名包路径
+  type-aliases-package:com.Springboot.pojo
+    #映射文件路径
+    #mapper-locations:
+  configuration:
+  log-impl:org.apache.ibatis.logging.stdout.StdOutImpl
